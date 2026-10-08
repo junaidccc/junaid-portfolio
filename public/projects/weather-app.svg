@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#121214"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#0d0d0f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#wBg)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- Weather Application Frame -->
+  <rect x="100" y="50" width="600" height="400" rx="12" fill="url(#cardGrad)" stroke="#27272a" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="100" y="50" width="600" height="44" rx="12" fill="#141416" stroke="#27272a" stroke-width="1"/>
+  <circle cx="128" cy="72" r="5" fill="#3f3f46"/>
+  <circle cx="144" cy="72" r="5" fill="#3f3f46"/>
+  <circle cx="160" cy="72" r="5" fill="#3f3f46"/>
+  <text x="400" y="77" font-family="'Space Grotesk', system-ui, sans-serif" font-size="12" fill="#71717a" text-anchor="middle" letter-spacing="1">ATMOSPHERE RADAR // METRICS</text>
+
+  <!-- Weather Display -->
+  <!-- Left Main Stats -->
+  <g transform="translate(140, 115)">
+    <text x="0" y="24" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="600" fill="#ffffff">KOCHI, KERALA</text>
+    <text x="0" y="44" font-family="'Space Mono', monospace" font-size="12" fill="#71717a">LAT 9.9312° N  •  LON 76.2673° E</text>
+    
+    <!-- Big Temperature Display -->
+    <text x="0" y="140" font-family="'Space Grotesk', system-ui, sans-serif" font-size="88" font-weight="700" fill="#ffffff" letter-spacing="-3">28°</text>
+    <text x="145" y="100" font-family="'Space Mono', monospace" font-size="18" fill="#a1a1aa">C</text>
+    <text x="0" y="170" font-family="'Space Grotesk', system-ui, sans-serif" font-size="15" fill="#a1a1aa">THUNDERSTORM WITH MILD PRECIPITATION</text>
+  </g>
+
+  <!-- Right Visual & Quick Metrics -->
+  <g transform="translate(460, 115)">
+    <rect width="200" height="180" rx="8" fill="#1f1f23" stroke="#27272a" stroke-width="1"/>
+    
+    <!-- Cloud & Lightning Graphic -->
+    <g transform="translate(100, 60)" stroke="#ffffff" fill="none" stroke-width="2">
+      <!-- Minimalist cloud outline -->
+      <path d="M-30,10 A15,15 0 0,1 -10,-12 A25,25 0 0,1 25,-12 A18,18 0 0,1 35,10 Z" fill="#27272a"/>
+      <!-- Lightning bolt -->
+      <polyline points="0,15 -6,27 4,27 -2,40" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+    </g>
+
+    <text x="100" y="130" font-family="'Space Mono', monospace" font-size="12" fill="#ffffff" text-anchor="middle">HUMIDITY: 82%</text>
+    <text x="100" y="152" font-family="'Space Mono', monospace" font-size="12" fill="#71717a" text-anchor="middle">WIND: 14 KM/H</text>
+  </g>
+
+  <!-- Weekly Horizontal Forecast -->
+  <g transform="translate(140, 320)">
+    <rect width="520" height="95" rx="8" fill="#161618" stroke="#27272a" stroke-width="1"/>
+    
+    <!-- Day 1 -->
+    <g transform="translate(30, 20)">
+      <text x="25" y="18" font-family="'Space Mono', monospace" font-size="11" fill="#71717a" text-anchor="middle">MON</text>
+      <circle cx="25" cy="40" r="8" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="25" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">29°</text>
+    </g>
+
+    <!-- Day 2 -->
+    <g transform="translate(130, 20)">
+      <text x="25" y="18" font-family="'Space Mono', monospace" font-size="11" fill="#71717a" text-anchor="middle">TUE</text>
+      <path d="M15,40 A10,10 0 0,1 35,40 Z" fill="none" stroke="#a1a1aa" stroke-width="1.5"/>
+      <text x="25" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">27°</text>
+    </g>
+
+    <!-- Day 3 -->
+    <g transform="translate(230, 20)">
+      <text x="25" y="18" font-family="'Space Mono', monospace" font-size="11" fill="#ffffff" text-anchor="middle">TODAY</text>
+      <circle cx="25" cy="40" r="8" fill="#ffffff"/>
+      <text x="25" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">28°</text>
+    </g>
+
+    <!-- Day 4 -->
+    <g transform="translate(330, 20)">
+      <text x="25" y="18" font-family="'Space Mono', monospace" font-size="11" fill="#71717a" text-anchor="middle">THU</text>
+      <circle cx="25" cy="40" r="8" fill="none" stroke="#71717a" stroke-width="1.5"/>
+      <text x="25" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">30°</text>
+    </g>
+
+    <!-- Day 5 -->
+    <g transform="translate(430, 20)">
+      <text x="25" y="18" font-family="'Space Mono', monospace" font-size="11" fill="#71717a" text-anchor="middle">FRI</text>
+      <circle cx="25" cy="40" r="8" fill="none" stroke="#71717a" stroke-width="1.5"/>
+      <text x="25" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">31°</text>
+    </g>
+  </g>
+</svg>
